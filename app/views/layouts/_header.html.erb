@@ -2,10 +2,14 @@
   <div class="row">
       <div class="col-12 pt-3 pb-3 mb-4 border-bottom">
         <div class="float-right">
-          <%= link_to "Log in", new_account_session_path, class: "btn  btn-outline-primary" %>
-          <%= link_to "Sign up", new_account_registration_path, class: "btn  btn-primary" %>
+          <% if account_signed_in? %>
+            <%= link_to "Sign out", destroy_account_session_path,method: :delete, class: "btn  btn-primary" %>
+          <% else %>
+            <%= link_to "Log in", new_account_session_path, class: "btn  btn-outline-primary" %>
+            <%= link_to "Sign up", new_account_registration_path, class: "btn  btn-primary" %>
+          <% end %>
         </div>
-        <p class="h3"> Reddit-clone </p>
+        <p class="h3"> <%=link_to "Reddit-clone", root_path %> </p>
       </div>
   </div>
 </div>
