@@ -9,7 +9,7 @@
             </a>
 
             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <%= link_to "profile", "", class: "dropdown-item" %>
+              <%= link_to "profile", profile_path(current_account.username), class: "dropdown-item" %>
               <%= link_to "setting", edit_account_registration_path, class: "dropdown-item" %>
               <%= link_to "Sign out", destroy_account_session_path,method: :delete, class: "dropdown-item" %>
             </div>
