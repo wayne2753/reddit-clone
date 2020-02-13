@@ -31,7 +31,7 @@ class PostsController < ApplicationController
   private
 
   def set_posts
-    @post = Post.find(params[:id])
+    @post = Post.includes(:comments).find(params[:id])
   end
 
   def post_values
