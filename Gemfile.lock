@@ -86,6 +86,7 @@ GEM
       warden (~> 1.2.3)
     erubi (1.9.0)
     ffi (1.12.2)
+    ffi (1.12.2-java)
     ffi (1.12.2-x64-mingw32)
     ffi (1.12.2-x86-mingw32)
     globalid (0.4.2)
@@ -132,7 +133,7 @@ GEM
       nio4r (~> 2.0)
     puma (4.3.1-java)
       nio4r (~> 2.0)
-    rack (2.1.2)
+    rack (2.2.6.2)
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
